@@ -1,0 +1,40 @@
+.card-body{
+    background-color:ghostwhite;
+    margin: 30px
+}
+label {
+    /* Other styling... */
+    text-align: right;
+    clear: both;
+    float:left;
+    font-size: 20px;
+    font-weight: 30px
+    
+}
+.top-buffer{
+    margin-top:40px
+}
+#myInput {
+    background-image: url('../../assets/search.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    width: 80%;
+    font-size: 16px;
+    padding: 10px 10px 10px 30px;
+    border: 1px solid #ddd;
+    margin-top:30px
+  }
+.card-header{
+    margin: 30px
+}
+
+mat-header-cell {
+    color: black;
+    font-size: 20px;
+    // font-weight: 
+  }
+  
+
+
+
+
