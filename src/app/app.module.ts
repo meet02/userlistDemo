@@ -5,6 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgxPaginationModule } from 'ngx-pagination';
+import {MaterialModule} from './material/material.module'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgxFloatButtonModule } from 'ngx-float-button';
+
 import {
   MatAutocompleteModule,
   MatBadgeModule,
@@ -41,6 +46,8 @@ import {
   MatToolbarModule,
   MatTooltipModule,
   MatTreeModule,
+  
+  
 } from '@angular/material';
 
 @NgModule({
@@ -87,6 +94,12 @@ import {
   MatToolbarModule,
   MatTooltipModule,
   MatTreeModule,
+  NgxPaginationModule,
+  MaterialModule,
+  ReactiveFormsModule,
+  FormsModule,
+  NgxFloatButtonModule
+  
   ],
   providers: [],
   bootstrap: [AppComponent]

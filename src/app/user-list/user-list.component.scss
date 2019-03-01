@@ -1,16 +1,4 @@
-.card-body{
-    background-color:ghostwhite;
-    margin: 30px
-}
-label {
-    /* Other styling... */
-    text-align: right;
-    clear: both;
-    float:left;
-    font-size: 20px;
-    font-weight: 30px
-    
-}
+
 .top-buffer{
     margin-top:40px
 }
@@ -33,7 +21,45 @@ mat-header-cell {
     font-size: 20px;
     // font-weight: 
   }
-  
+.card-body .border{
+    border: solid 1px black;
+    margin: 10px
+    
+}
+
+mat-form-field{
+    margin: 20px;
+    padding-left: 30px;
+    width: 25%;
+    
+}
+
+button{
+    width: 150px;
+    padding-left: 30px;
+    font-size: 20px;
+    margin-left: 30px
+}
+
+.text-center {
+    text-align: center;
+  }
+mat-card-content{
+    margin-left: 30px
+}
+example-container{
+    padding-top: 20px;
+}
+.actionBtn{
+    position: absolute; 
+    right: 0;
+   
+}
+
+
+
+
+
 
 
 

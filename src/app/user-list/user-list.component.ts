@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import {MatPaginator, MatSort, MatTableDataSource} from '@angular/material';
 import { ViewChild } from '@angular/core';
-
+import { FormGroup, FormControl, 
+  Validators } from "@angular/forms";
+import { FormBuilder } from '@angular/forms';
 declare interface User {
   userId: string;
   userName: string;
@@ -25,15 +27,14 @@ export interface UserData {
   styleUrls: ['./user-list.component.scss']
 })
 export class UserListComponent implements OnInit {
-
+  searchForm:FormGroup
   displayedColumns = ["userId","userName","firstName","lastName","dob","actions"]
   dataSource: MatTableDataSource<UserData>;
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
  
   
-  
-  constructor() {
+  constructor(private formBuilder:FormBuilder) {
     const users: UserData[] = [
       {userId:"001",userName:"meet001",firstName:"Meet",lastName:"Aghera",dob:"21-02-1995"},
     {userId:"002",userName:"meet002",firstName:"Rahul",lastName:"viragna",dob:"21-02-1995"},
@@ -68,6 +69,12 @@ export class UserListComponent implements OnInit {
     this.dataSource.filter = filterValue;
   }
   ngOnInit() {
+
+    this.searchForm=this.formBuilder.group({
+      firstName: [''],
+      lastName: [''],
+      ANumber:[''],
+    })
   }
 
 
